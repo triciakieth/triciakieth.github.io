@@ -1,123 +1,71 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Data Portfolio</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
-            color: #222;
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #14213d;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        section {
-            max-width: 850px;
-            margin: 40px auto;
-            padding: 25px;
-            background: white;
-            border-radius: 12px;
-        }
-
-        h2 {
-            color: #14213d;
-        }
-
-        .project {
-            padding: 15px;
-            margin: 15px 0;
-            border-left: 4px solid #0077b6;
-            background: #f5f7fa;
-        }
-
-        a {
-            color: #0077b6;
-            text-decoration: none;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tricia Kieth B. Taneo — Data Engineer and Analytics portfolio." />
+  <title>Tricia Kieth Taneo | Data Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-<header>
-    <h1>Hi, I'm Your Name!</h1>
-    <p>Aspiring Data Engineer | Data Analyst | SQL | Python | Power BI</p>
-    <p>
-        <a href="https://github.com/YOUR-USERNAME">GitHub</a> |
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/">LinkedIn</a>
-    </p>
-</header>
-
-<section>
-    <h2>About Me</h2>
-    <p>
-        I am an aspiring data professional passionate about transforming
-        raw data into meaningful insights through data engineering,
-        analytics, and visualization.
-    </p>
-</section>
-
-<section>
-    <h2>Skills</h2>
-    <p>SQL | Python | Databricks | Power BI | Excel | ETL | Data Visualization</p>
-</section>
-
-<section>
-    <h2>Featured Projects</h2>
-
-    <div class="project">
-        <h3>KITA DPWH Infrastructure Monitoring</h3>
-        <p>
-            An end-to-end data engineering pipeline developed through
-            the Accenture x FTW Data Engineering Program.
-        </p>
-        <a href="YOUR-GITHUB-PROJECT-LINK">View Project →</a>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <nav class="nav">
+    <a class="brand" href="#home"><span class="brand-mark">T</span><span>Tricia Kieth Taneo</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
     </div>
+    <a class="nav-resume" href="assets/Tricia_Kieth_Taneo_CV.docx" download>Download CV <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </nav>
 
-    <div class="project">
-        <h3>Retail Data Analytics</h3>
-        <p>
-            Data cleaning, SQL transformations, and business insights
-            using retail transaction data.
-        </p>
-        <a href="YOUR-GITHUB-PROJECT-LINK">View Project →</a>
-    </div>
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO DATA OPPORTUNITIES</p>
+        <h1>Turning data into<br><span class="gradient-text">meaningful decisions.</span></h1>
+        <p class="lead">I'm Tricia Kieth, a Business Economics graduate and Databricks-certified Data Engineer building reliable data pipelines and translating complex data into useful insights.</p>
+        <div class="hero-buttons"><a class="button button-primary" href="#projects">Explore my work <span>↘</span></a><a class="button button-ghost" href="assets/Tricia_Kieth_Taneo_CV.docx" download>Download résumé <span>↓</span></a></div>
+        <div class="social-row"><a href="https://github.com/triciakieth" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/triciakieth" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:triciakiethtaneo@gmail.com">Email ↗</a></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="visual-grid"></div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="data-window"><div class="window-top"><span></span><span></span><span></span><b>pipeline.py</b></div><div class="code-lines"><p><i>01</i> <span class="purple">from</span> pyspark.sql <span class="purple">import</span> SparkSession</p><p><i>02</i></p><p><i>03</i> df = spark.read.table(</p><p><i>04</i> &nbsp;&nbsp;<span class="green">"bronze.projects"</span>)</p><p><i>05</i> clean = transform(df)</p><p><i>06</i> clean.write.saveAsTable(</p><p><i>07</i> &nbsp;&nbsp;<span class="green">"silver.projects"</span>)</p><p><i>08</i> <span class="blue"># quality checks passed ✓</span></p></div></div>
+        <div class="float-chip chip-top"><span class="chip-icon">⌘</span> ETL / ELT</div><div class="float-chip chip-bottom"><span class="pulse"></span> Data quality first</div>
+      </div>
+      <div class="hero-bottom"><span>PYTHON · SQL · DATABRICKS</span><span>SCROLL TO EXPLORE <b>↓</b></span></div>
+    </section>
 
-    <div class="project">
-        <h3>Undergraduate Thesis</h3>
-        <p>
-            Econometric analysis of telework determinants using
-            statistical modeling on 400,000+ Philippine labor observations.
-        </p>
-        <a href="YOUR-GITHUB-PROJECT-LINK">View Project →</a>
-    </div>
-</section>
+    <section class="section-wrap section" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 / A LITTLE ABOUT ME</p><h2>Analytical by training.<br><span class="muted">Curious by nature.</span></h2></div>
+      <div class="about-grid"><p class="about-text reveal">I'm a Business Economics graduate from the University of the Philippines Diliman and a newly certified Databricks Data Engineer Associate. Through the FTW Foundation Data Engineering program, I developed hands-on experience building end-to-end pipelines, working with large datasets, and creating dashboards.<br><br>I enjoy connecting engineering foundations with business context: making data dependable, understandable, and ready to support better decisions.</p><div class="stats-grid reveal"><div class="stat"><strong>265K<span>+</span></strong><small>DPWH projects processed in capstone</small></div><div class="stat"><strong>40<span>%</span></strong><small>Data quality improvement during internship</small></div><div class="stat"><strong>900<span>+</span></strong><small>Stakeholder records maintained</small></div><div class="stat"><strong>400K<span>+</span></strong><small>Observations in undergraduate research</small></div></div></div>
+    </section>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-    <p><a href="YOUR-LINKEDIN-LINK">Connect with me on LinkedIn</a></p>
-</section>
+    <section class="section-wrap section" id="skills">
+      <div class="section-heading reveal"><p class="eyebrow">02 / TOOLKIT</p><h2>Tools I use to make<br><span class="muted">data work.</span></h2></div>
+      <div class="skills-grid reveal"><article class="skill-card"><div class="skill-icon">⌘</div><h3>Engineering & Processing</h3><div class="tags"><span>Python</span><span>PySpark</span><span>SQL</span><span>Spark SQL</span><span>Delta Lake</span><span>ETL / ELT</span></div></article><article class="skill-card"><div class="skill-icon">◫</div><h3>Platforms & Tools</h3><div class="tags"><span>Databricks</span><span>Power BI</span><span>Excel</span><span>Git / GitHub</span><span>VS Code</span><span>Anaconda</span></div></article><article class="skill-card"><div class="skill-icon">↗</div><h3>Data & Analytics</h3><div class="tags"><span>Medallion Architecture</span><span>Data Modeling</span><span>Data Quality</span><span>Governance</span><span>Visualization</span><span>Business Framing</span></div></article></div>
+    </section>
 
-<footer>
-    <p>© 2026 Your Name | Built with GitHub Pages</p>
-</footer>
+    <section class="section-wrap section" id="projects">
+      <div class="section-heading heading-row reveal"><div><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects built with<br><span class="muted">purpose and precision.</span></h2></div><a class="text-link" href="https://github.com/triciakieth?tab=repositories" target="_blank" rel="noreferrer">All repositories ↗</a></div>
+      <div class="projects-grid">
+        <article class="project-card featured reveal"><div class="project-art art-infra"><div class="art-label">KITA · DPWH</div><div class="mini-chart"><span style="height:38%"></span><span style="height:62%"></span><span style="height:45%"></span><span style="height:80%"></span><span style="height:55%"></span><span style="height:95%"></span><span style="height:68%"></span></div><div class="art-caption">PUBLIC INFRASTRUCTURE × POPULATION</div></div><div class="project-content"><div class="project-meta"><span>CAPSTONE · DATA ENGINEERING</span><span>01</span></div><h3>KITA DPWH Infrastructure Monitoring</h3><p>Built an end-to-end Databricks pipeline processing approximately 265,000 public infrastructure projects. Applied medallion architecture, data quality checks, and PSGC place-code assignment to compare infrastructure spending with population and surface underinvestment.</p><div class="tags"><span>Databricks</span><span>PySpark</span><span>SQL</span><span>Delta Lake</span><span>Medallion</span></div><a class="project-link" href="https://github.com/triciakieth/infra-project-monitoring" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div></article>
+        <article class="project-card reveal"><a class="project-art art-oulad" href="https://github.com/triciakieth/oulad-pipeline" target="_blank" rel="noreferrer"><div class="art-label">LEARNING ANALYTICS</div><div class="node-flow"><span>RAW DATA</span><b>→</b><span>TRANSFORM</span><b>→</b><span>ANALYZE</span></div><div class="art-caption">OPEN UNIVERSITY · DATA PIPELINE</div></a><div class="project-content"><div class="project-meta"><span>DATA ENGINEERING</span><span>02</span></div><h3>OULAD Data Pipeline</h3><p>Developed a pipeline for Open University learning activity data, applying transformation and modeling practices to prepare data for analysis.</p><div class="tags"><span>Python</span><span>SQL</span><span>Databricks</span></div><a class="project-link" href="https://github.com/triciakieth/oulad-pipeline" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div></article>
+        <article class="project-card reveal"><a class="project-art art-nyc" href="https://github.com/triciakieth/NEW-NYC-MOBILITY-PIPELINE" target="_blank" rel="noreferrer"><div class="art-label">URBAN MOBILITY</div><div class="route-graphic"><svg viewBox="0 0 300 100" aria-hidden="true"><path d="M10 75 C65 5 100 95 155 40 S235 12 290 65" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="5 7"/><circle cx="10" cy="75" r="5"/><circle cx="155" cy="40" r="5"/><circle cx="290" cy="65" r="5"/></svg></div><div class="art-caption">NYC · MOBILITY DATA</div></a><div class="project-content"><div class="project-meta"><span>DATA ENGINEERING</span><span>03</span></div><h3>NYC Mobility Pipeline</h3><p>Created a data pipeline around public NYC mobility/transit data, with structured processing to support downstream exploration and analytics.</p><div class="tags"><span>Python</span><span>SQL</span><span>Data Pipelines</span></div><a class="project-link" href="https://github.com/triciakieth/NEW-NYC-MOBILITY-PIPELINE" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div></article>
+        <article class="project-card reveal"><a class="project-art art-model" href="https://github.com/triciakieth/chinook-dimensional-model" target="_blank" rel="noreferrer"><div class="art-label">DIMENSIONAL MODELING</div><div class="schema"><div class="schema-box">FACT<br><small>Sales</small></div><div class="schema-links">╱ │ ╲</div><div class="schema-row"><span>DIM</span><span>DIM</span><span>DIM</span></div></div><div class="art-caption">CHINOOK · ANALYTICAL MODEL</div></a><div class="project-content"><div class="project-meta"><span>DATA MODELING</span><span>04</span></div><h3>Chinook Dimensional Model</h3><p>Designed a dimensional model for the Chinook dataset to organize transactional data for analytical querying and reporting.</p><div class="tags"><span>SQL</span><span>Dimensional Modeling</span></div><a class="project-link" href="https://github.com/triciakieth/chinook-dimensional-model" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div></article>
+      </div>
+    </section>
 
+    <section class="section-wrap section" id="experience"><div class="section-heading reveal"><p class="eyebrow">04 / EXPERIENCE</p><h2>Where I've been<br><span class="muted">learning and contributing.</span></h2></div><div class="timeline reveal"><div class="timeline-item"><div class="timeline-date">JUL — OCT 2026</div><div><h3>Data Engineering Scholar <span>· Accenture × FTW Foundation</span></h3><p>Completed an intensive program in end-to-end pipelines, data modeling, large-scale processing, and dashboards. Collaborated in a five-person capstone team using GitHub pull requests, peer review, and project boards.</p></div></div><div class="timeline-item"><div class="timeline-date">APR — JUL 2026</div><div><h3>Sales & Marketing Intern <span>· Bright Venture Partners Philippines</span></h3><p>Built dashboards consolidating 2,000+ records, standardized 500+ records, and improved data quality by 40%. Maintained lead-tracking databases and documented workflows.</p></div></div><div class="timeline-item"><div class="timeline-date">JAN — APR 2026</div><div><h3>Membership Relations Intern <span>· European Chamber of Commerce of the Philippines</span></h3><p>Designed and maintained a stakeholder database of 900+ records across membership tiers, improving data accuracy and consistency.</p></div></div></div></section>
+
+    <section class="section-wrap section credentials" id="certifications"><div class="section-heading reveal"><p class="eyebrow">05 / CONTINUOUS LEARNING</p><h2>Credentials &<br><span class="muted">education.</span></h2></div><div class="credential-grid reveal"><div class="credential"><div class="credential-mark">✳</div><div><h3>Databricks Data Engineer Associate</h3><p>Certified · October 2026</p></div><span class="verified">✓</span></div><div class="credential"><div class="credential-mark">◈</div><div><h3>DataCamp Data Engineer Associate</h3><p>November 2026 · listed on résumé</p></div><span class="verified">↗</span></div><div class="credential education"><div class="credential-mark">◎</div><div><h3>BS Business Economics</h3><p>University of the Philippines Diliman · Dean's List · July 2026</p></div></div></div></section>
+
+    <section class="contact-section" id="contact"><div class="section-wrap contact-inner reveal"><p class="eyebrow">06 / LET'S CONNECT</p><h2>Have a data challenge<br>in mind? <span class="gradient-text">Let's talk.</span></h2><p>I'm excited to contribute, learn, and build thoughtful data solutions with a team.</p><a class="button button-primary" href="mailto:triciakiethtaneo@gmail.com">Get in touch <span>↗</span></a><div class="contact-links"><a href="https://github.com/triciakieth" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/triciakieth" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:triciakiethtaneo@gmail.com">Email ↗</a></div></div></section>
+  </main>
+  <footer><div class="section-wrap footer-inner"><span>© <span id="year"></span> Tricia Kieth B. Taneo</span><span>Designed with curiosity & built for data.</span><a href="#home">Back to top ↑</a></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
